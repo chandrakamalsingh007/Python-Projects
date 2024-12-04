@@ -1,5 +1,5 @@
 email = input("Enter your email :")#g@g.in
-k,j=0,0
+k,j,d=0,0,0
 if len(email)>=6:
     if email[0].isalpha():
         if ("@"in email) and (email.count("@") == 1):
@@ -11,9 +11,15 @@ if len(email)>=6:
                         if i==i.upper(): # w-- W==w
                             j=1
                     elif i.isdigit():
-                                
-                if k==1 or j==1:
-                    print("Wrong Email 5th condition")
+                        continue 
+                    elif i=="_" or i=="." or i == "@":
+                        continue
+                    else:
+                        d=1  
+                if k==1 or j==1 or d == 1:
+                    print("Invalid Email")
+                else:
+                    print("Valid Email.")
             else:
                 print("Wrong Email 4th condition.")
         else:
