@@ -8,5 +8,5 @@
                 2.Email should be starting with alphabets.
                 3.Presence of an "@" symbol.
                 4.Valid characters in the local part (before @) and domain part (after @).
-                .No consecutive dots (..).
-                .No invalid characters like spaces or special symbols outside allowed ones (e.g., +, _).
+                5.No consecutive dots (..).
+                6.No invalid characters like spaces or special symbols outside allowed ones (e.g., +, _).
